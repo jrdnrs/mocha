@@ -1,0 +1,16 @@
+[package]
+name = "mocha"
+version = "0.1.0"
+edition = "2021"
+
+
+[workspace]
+members = [
+    "core",
+    "platform",
+]
+
+
+[dependencies]
+mocha-core = {path = "core"}
+mocha-platform = {path = "platform"}
