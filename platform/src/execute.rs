@@ -1,7 +1,7 @@
 use std::num::NonZeroU32;
 
 use glutin::surface::GlSurface;
-use mocha_core::Renderer;
+use mocha_core::{Renderer, component::{Layer, Component}};
 use winit::event::{DeviceEvent, Event, VirtualKeyCode, WindowEvent};
 
 use crate::{graphics::renderer::GlRenderer, window::window::GlWindow};

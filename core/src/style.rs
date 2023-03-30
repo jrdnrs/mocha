@@ -63,6 +63,15 @@ pub struct BorderRadius {
 }
 
 impl BorderRadius {
+    pub fn new(tr: f32, br: f32, bl: f32, tl: f32) -> Self {
+        Self {
+            top_right: tr,
+            bottom_right: br,
+            bottom_left: bl,
+            top_left: tl,
+        }
+    }
+
     pub const fn none() -> Self {
         Self {
             top_right: 0.0,
@@ -81,6 +90,10 @@ pub struct Colour {
 }
 
 impl Colour {
+    pub fn new(r: f32, g: f32, b: f32) -> Self {
+        Self { r, g, b }
+    }
+
     pub const fn white() -> Self {
         Self {
             r: 1.0,
